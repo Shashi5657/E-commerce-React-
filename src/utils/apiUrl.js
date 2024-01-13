@@ -1,0 +1,1 @@
+export const BASE_url ='https://dummyjson.com/';
