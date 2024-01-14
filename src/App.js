@@ -17,6 +17,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
+        <Sidebar />
       </BrowserRouter>
     </div>
   );
