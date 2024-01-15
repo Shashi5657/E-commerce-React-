@@ -11,14 +11,18 @@ import {
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Sidebar from "./components/sidebar/Sidebar";
+import Store from "./store/Store";
+import { Provider } from "react-redux";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header />
-        <Sidebar />
-      </BrowserRouter>
+      <Provider store={Store}>
+        <BrowserRouter>
+          <Header />
+          <Sidebar />
+        </BrowserRouter>
+      </Provider>
     </div>
   );
 }
